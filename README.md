@@ -195,7 +195,7 @@ public class Demo
 
     msgpackFormatter.DeserializeTo(msgpack, RWHelper.CreateWriter(obj));
 
-    Console.WriteLine(msgpack);
+    Console.WriteLine(msgpack.ToHexString());
     // 83a249647ba853797374656d4e6fa439313130a4494d4549ae3078314339323937323433364439
     // as Json: {"Id":123,"SystemNo":"9110","IMEI":"0x1C92972436D9"}
 
